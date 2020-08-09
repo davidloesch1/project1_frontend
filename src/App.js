@@ -32,9 +32,10 @@ function App() {
         password: Password,
       },
       withCredentials: true,
-      url: "http://localhost:5000/register",
+      url: "http://localhost:5000/auth/register",
     }).then((res) => console.log(res));
   };
+  
   const getUser = () => {
     Axios({
       method: "GET",
